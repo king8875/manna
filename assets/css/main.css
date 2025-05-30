@@ -1,0 +1,50 @@
+.wrapper{}
+
+
+
+
+
+.visual-swiper--section{
+    position: relative;
+    margin-top: 100px;
+}
+.visual-swiper--section .visual-swiper--block{}
+.visual-swiper--section .swiper{}
+.visual-swiper--section .swiper .swiper-wrapper{}
+.visual-swiper--section .swiper .swiper-wrapper .swiper-slide{}
+.visual-swiper--section .swiper .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.visual-swiper--section .swiper-slide .visual-tx--block{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+}
+.visual-swiper--section .swiper-slide .visual-tx--block .visual-tx--tit{}
+.visual-swiper--section .swiper-slide .visual-tx--block .visual-tx--tit strong{
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: -0.065em;
+    color: #fff;
+    /* word-break: break-word; */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 2.9em;
+}
+.visual-swiper--section .swiper-slide .visual-tx--block .visual-tx--subtit{}
+.visual-swiper--section .swiper-slide .visual-tx--block .visual-tx--subtit p{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: #fff;
+}
+
+
