@@ -1,0 +1,11 @@
+<svg width="56" height="58" viewBox="0 0 56 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M47 32C47 44.702 36.702 55 24 55C11.297 55 1 44.702 1 32C1 19.297 11.297 9 24 9C36.702 9 47 19.297 47 32Z" fill="#5584A0"/>
+<path d="M24 55C36.7025 55 47 44.7025 47 32C47 19.2975 36.7025 9 24 9C11.2975 9 1 19.2975 1 32C1 44.7025 11.2975 55 24 55Z" stroke="#202020" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M42 32C42 41.941 33.941 50 24 50C14.059 50 6 41.941 6 32C6 22.059 14.059 14 24 14C33.941 14 42 22.059 42 32Z" fill="white"/>
+<path d="M24 50C33.9411 50 42 41.9411 42 32C42 22.0589 33.9411 14 24 14C14.0589 14 6 22.0589 6 32C6 41.9411 14.0589 50 24 50Z" stroke="#202020" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M18.744 36.757C20.829 34.838 21.915 33.919 24 32V21" stroke="#202020" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M55 4H30V18H35.125L33.5 23L42.041 18H55V4Z" fill="#DDDDDD"/>
+<path d="M55 4H30V18H35.125L33.5 23L42.041 18H55V4Z" stroke="#202020" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M37 9H48" stroke="#202020" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M37 13H48" stroke="#202020" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

@@ -9,7 +9,9 @@
     margin-top: 100px;
 }
 .visual-swiper--section .visual-swiper--block{}
-.visual-swiper--section .swiper{}
+.visual-swiper--section .swiper{
+    height: 650px;
+}
 .visual-swiper--section .swiper .swiper-wrapper{}
 .visual-swiper--section .swiper .swiper-wrapper .swiper-slide{}
 .visual-swiper--section .swiper .swiper-wrapper .swiper-slide img{
@@ -37,7 +39,9 @@
     overflow: hidden;
     max-height: 2.9em;
 }
-.visual-swiper--section .swiper-slide .visual-tx--block .visual-tx--subtit{}
+.visual-swiper--section .swiper-slide .visual-tx--block .visual-tx--subtit{
+    margin-bottom: 10px;
+}
 .visual-swiper--section .swiper-slide .visual-tx--block .visual-tx--subtit p{
     display: inline-block;
     vertical-align: top;
@@ -47,4 +51,149 @@
     color: #fff;
 }
 
+.visual-campaign--block{
+    position: relative;
+    width: 1350px;
+    margin: 0 auto;
+    top: -50px;
+    z-index: 10;
+    padding: 40px 0;
+    background: #f6f6f6;
+}
+.visual-campaign--block .camp_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.visual-campaign--block .camp_list .camp_item{
+    border-right: 1px solid #ddd;
+}
+.visual-campaign--block .camp_list .camp_item:last-child{
+    border: none;
+}
+.visual-campaign--block .camp_list .camp_item a{
+}
+.visual-campaign--block .camp_list .camp_item a:hover .camp-tx strong{
+    color: #0f4c82;
+}
+.camp_content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.camp_content .img--block{
+    width: 100px;
+    height: 100px;
+}
+.camp_content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.camp_content .camp-tx{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 40px;
+}
+.camp-tx strong{
+    font-size: 22px;
+    font-weight: bold;
+    transition: all .5s;
 
+}
+.camp-tx p{
+    color: #666;
+}
+
+
+/* slogan css */
+.slogan--section{
+    position: relative;
+}
+.slogan--section .slogan_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.slogan--section .slogan_inner .slogan_tit--block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    background: #ccc;
+}
+.slogan--section .slogan_inner .slogan_tit--block .tit_tx{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.065em;
+    color: #222;
+}
+.slogan--section .slogan_inner .slogan_tit--block .subtit_tx{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0f4c82;
+    margin-top: 1.7rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #0f4c82;
+}
+.slogan--section .slogan_inner .slogan_tit--block .desc{
+    font-size: 1.4rem;
+    margin-top: 1.8rem;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    line-height: 1.67;
+    color: #666;
+}
+
+.slogan--section .slogan_inner .slogan_quick--list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 20px;
+}
+.slogan--section .slogan_inner .slogan_quick--list .quick--item{}
+.slogan_quick--list .quick--item .quick--link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.slogan_quick--list .quick--item .quick--link:hover .quick-tx{
+    padding-right: 25px;
+}
+.slogan_quick--list .quick--item .quick--link:hover .quick-tx::after{
+    opacity: 1;
+}
+.slogan_quick--list .quick--item .quick--link .img--block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: #f8f8f8;
+
+}
+.slogan_quick--list .quick--item .quick--link .img--block img{}
+.slogan_quick--list .quick--item .quick--link .quick-tx{
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .5s;
+}
+.slogan_quick--list .quick--item .quick--link .quick-tx::after{
+    content: '->';
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #0f4c82;
+    opacity: 0;
+    transition: opacity 300ms;
+}
