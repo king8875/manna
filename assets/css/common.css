@@ -1,0 +1,10 @@
+[lang = "en"]{
+    font-family: 'Gotham', 'NotoSansKR', sans-serif;
+}
+section{
+    position: relative;
+}
+.inner{
+    width: 1300px;
+    margin: 0 auto;
+}
