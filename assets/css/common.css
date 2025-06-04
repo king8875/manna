@@ -6,6 +6,20 @@ section{
     position: relative;
 }
 .inner{
+    position: relative;
     width: 1300px;
     margin: 0 auto;
+}
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #b2b2b2 !important;
 }

@@ -13,10 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="header_inner">
+        <div class="header_inner pc">
             <div class="logo--block">
                 <a href="#">
                     <img src="/assets/img/header/logo.svg" alt="메인로고이미지">
@@ -64,6 +68,53 @@
                 </ul>
             </div>
         </div>
+
+        <div class="header_mobile">
+            <div class="header_mobile--top">
+                <div class="logo--block">
+                    <a href="#">
+                        <img src="/assets/img/header/logo.svg" alt="메인로고이미지">
+                    </a>
+                </div>
+                <div class="search_ic--block">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="mobilenav--block">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#" class="active">홈</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">예배</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">강의</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">소모임</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">훈련</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">섬김</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">미디어</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">교회소개</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">행정</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
     </header>
     <main>
         <div class="wrapper">
@@ -124,7 +175,7 @@
                 </div>
 
 
-                <div class="visual-campaign--block">
+                <div class="visual-campaign--block inner">
                     <ul class="camp_list">
                         <li class="camp_item">
                             <a href="#">
@@ -160,10 +211,54 @@
                             </a>
                         </li>
                     </ul>
+
+                </div>
+
+                <div class="camp_swiper_mobile swiper" id="campSwiper">
+                    <ul class="camp_list_mobile swiper-wrapper">
+                        <li class="camp_item_mobile swiper-slide">
+                            <a href="#">
+                                <div class="camp_content">
+                                    <div class="img--block"><img src="/assets/img/camp/camp_img.jpg" alt=""></div>
+                                    <div class="camp-tx">
+                                        <strong>[월간] 만나소식지</strong>
+                                        <p>매달 만나교회 소식을 전해드립니다.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="camp_item_mobile swiper-slide">
+                            <a href="#">
+                                <div class="camp_content">
+                                    <div class="img--block"><img src="/assets/img/camp/camp_img.jpg" alt=""></div>
+                                    <div class="camp-tx">
+                                        <strong>[월간] 만나소식지</strong>
+                                        <p>매달 만나교회 소식을 전해드립니다.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="camp_item_mobile swiper-slide">
+                            <a href="#">
+                                <div class="camp_content">
+                                    <div class="img--block"><img src="/assets/img/camp/camp_img.jpg" alt=""></div>
+                                    <div class="camp-tx">
+                                        <strong>[월간] 만나소식지</strong>
+                                        <p>매달 만나교회 소식을 전해드립니다.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn prev swiper-button-prev"><span class="blind">prev</span></div>
+                    <div class="btn next swiper-button-next"><span class="blind">next</span></div>
                 </div>
 
 
             </section>
+
+            <section class="main_section_separator"></section>
+
 
             <section class="slogan--section">
                 <div class="inner slogan_inner">
@@ -532,11 +627,6 @@
                                 </a>
                             </div>
                         </div>
-
-
-                        
-                        
-                        
                     </div>
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -754,28 +844,58 @@
         </div>
     </main>
     <footer class="footer">
+        <div class="footer_totop--btn" id="GoToTop">
+            <span class="totop_ic"></span>
+            <span class="blind">위로 올라가기</span>
+        </div>
         <div class="inner">
             <div class="footer_top">
                 <nav>
                     <ul class="footer_nav--list">
                         <li class="footer_nav--item">
-                            <a href="#">개인정보처리방침</a>
+                            <a href="#" class="active">개인정보처리방침</a>
                         </li>
                         <li class="footer_nav--item">
-                            <a href="#">개인정보처리방침</a>
+                            <a href="#">이용약관</a>
                         </li>
                         <li class="footer_nav--item">
-                            <a href="#">개인정보처리방침</a>
+                            <a href="#">이메일무단수집거부</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="footer_bottom">
                 <div class="footer_info">
-                    <p>(우) 13440 경기도 성남시 분당구 양현로 353 (야탑동 393)</p>
-                    <p>TEL. 031-706-3351 FAX. 031-706-3350고유번호 : 129-82-60509</p>
+                    <p lang="en">(우) 13440 경기도 성남시 분당구 양현로 353 (야탑동 393)</p>
+                    <p lang="en">TEL. 031-706-3351 FAX. 031-706-3350고유번호 : 129-82-60509</p>
                 </div>
-                <div class="footer_sns_wrap"></div>
+                <ul class="footer_sns_wrap">
+                    <li class="footer_sns--item">
+                        <a href="#" class="viemo_ic">
+                            <div class="blind">viemo link</div>
+                        </a>
+                    </li>
+                    <li class="footer_sns--item">
+                        <a href="#" class="youtube_ic">
+                            <div class="blind">viemo link</div>
+                        </a>
+                    </li>
+                    <li class="footer_sns--item">
+                        <a href="#" class="instar_ic">
+                            <div class="blind">viemo link</div>
+                        </a>
+                    </li>
+                    <li class="footer_sns--item">
+                        <a href="#" class="chat_ic">
+                            <div class="blind">viemo link</div>
+                        </a>
+                    </li>
+                    <li class="footer_sns--item">
+                        <a href="#" class="facebook_ic">
+                            <div class="blind">viemo link</div>
+                        </a>
+                    </li>
+                </ul>
                 <p lang="en" class="copyright">
                     ©MANNA CHURCH. ALL RIGHTS RESERVED. DESIGNED BY STUDIO-JT.
                 </p>
