@@ -23,3 +23,22 @@ section{
 .swiper-button-next, .swiper-button-prev{
     color: #b2b2b2 !important;
 }
+.mobile{ display: none; }
+
+
+
+@media (max-width:1400px) {
+    .inner{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .mobile{
+        display: block;
+    }
+    .beginning_section .inner{
+        padding: 0;
+    }
+}
+
+
+

@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
 }
 
 .header_inner.pc .logo--block{
@@ -39,20 +38,55 @@
 .header_inner.pc .nav--block .nav_list{
     display: flex;
     align-items: center;
-    gap: 50px;
 }
-.nav--block .nav_item{}
-.header_inner.pc .nav--block .nav_item a{
+.nav--block .nav_item{
+    position: relative;
+}
+.nav--block .nav_item.active .sub_list{
+    visibility: visible;
+}
+.header_inner.pc .nav--block .nav_item .nav_item--link{
     display: block;
     font-size: 18px;
     line-height: 1.4;
     letter-spacing: -0.025em;
     color: #222;
     text-align: center;
-    padding: 1.5rem 0 1.6rem;
+    padding: 25px;
     font-weight: 900;
+    transition: all .5s;
+}
+.header_inner.pc .nav--block .nav_item .nav_item--link:hover{
+    color: var(--blue-color);
+}
+
+
+.sub_list{
+    visibility: hidden;
+    position: absolute;
+    top: calc(100% + 0px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    background: #f6f6f6;
 
 }
+
+.sub_list .sub_item{
+    padding: 10px;
+    width: 100%;
+}
+.sub_list .sub_item a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
 .header_inner.pc .nav--block .search_ic--block{
     display: flex;
     align-items: center;
@@ -100,6 +134,31 @@
 .header .header_inner .login--block .login_list li .login--btn{
     font-size: 15px;
 }
+
+
+
+/* sidemenu */
+
+.side_menu--block{}
+.side_menu--block .side_menu--inner{}
+.side_menu--block .side_menu--inner .side_top--block{}
+.side_top--block .input{}
+.side_top--block .search_keyword{}
+.side_top--block .search_keyword ul{}
+.side_top--block .search_keyword ul li{}
+
+.side_bottom--block{}
+.side_bottom--block .side_bottom--left{}
+.side_bottom--block .side_bottom--left ul{}
+.side_bottom--block .side_bottom--left ul li{}
+
+
+.side_bottom--block .side_bottom--right{}
+.side_bottom--block .side_bottom--right ul{}
+.side_bottom--block .side_bottom--right ul li{}
+
+
+
 
 .footer_totop--btn{
     position: absolute;

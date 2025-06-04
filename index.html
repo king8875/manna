@@ -19,6 +19,93 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 </head>
 <body>
+
+
+
+
+    <div class="side_menu--block" id="sideMenu">
+        <div class="side_menu--inner">
+            <div class="side_top--block">
+
+
+                <div class="search_ic--block">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" class="sm-search--block">
+
+                <div class="search_keyword">
+                    <ul>
+                        <li>주보</li>
+                        <li>주보</li>
+                        <li>주보</li>
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+            <div class="side_bottom--block">
+
+                <div class="side_bottom--left">
+                    <ul>
+                        <li>예배</li>
+                        <li>예배</li>
+                        <li>예배</li>
+                        <li>예배</li>
+                        <li>예배</li>
+                        <li>예배</li>
+                        <li>예배</li>
+                    </ul>
+                </div>
+                <div class="side_bottom--right">
+                    <ul>
+                        <li>예배</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                    </ul>
+                    <ul>
+                        <li>예배</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                    </ul>
+                    <ul>
+                        <li>예배</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                    </ul>
+                    <ul>
+                        <li>예배</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                    </ul>
+                    <ul>
+                        <li>예배</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                        <li>설교</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
     <header class="header">
         <div class="header_inner pc">
             <div class="logo--block">
@@ -29,28 +116,61 @@
             <div class="nav--block">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#">예배</a>
+                        <a href="#" class="nav_item--link">예배</a>
+                        <ul class="sub_list">
+                            <li class="sub_item">
+                                <a href="#">설교</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배실황</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배안내</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav_item">
-                        <a href="#">강의</a>
+                        <a href="#" class="nav_item--link">강의</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#">소모임</a>
+                        <a href="#" class="nav_item--link">소모임</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#">훈련</a>
+                        <a href="#" class="nav_item--link">훈련</a>
+                        <ul class="sub_list">
+                            <li class="sub_item">
+                                <a href="#">설교</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배실황</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배안내</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav_item">
-                        <a href="#">섬김</a>
+                        <a href="#" class="nav_item--link">섬김</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#">미디어</a>
+                        <a href="#" class="nav_item--link">미디어</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#">교회소개</a>
+                        <a href="#" class="nav_item--link">교회소개</a>
+                        <ul class="sub_list">
+                            <li class="sub_item">
+                                <a href="#">설교</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배실황</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배안내</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav_item">
-                        <a href="#">행정</a>
+                        <a href="#" class="nav_item--link">행정</a>
                     </li>
                 </ul>
                 <div class="search_ic--block">
@@ -171,6 +291,12 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="btn prev swiper-button-prev">
+                            <span class="blind">이전</span>
+                        </div>
+                        <div class="btn next swiper-button-next">
+                            <span class="blind">다음</span>
+                        </div>
                     </div>
                 </div>
 
@@ -267,7 +393,7 @@
                         <p class="subtit_tx">MISSION STATEMENT</p>
                         <p class="desc">
                             하나님의 임재를 경험한 예배자들이,<br />
-                            예수님의 말씀으로 훈련된 제자가 되어, 성령님의 능력으로 지역과 세상을 섬긴다.
+                            예수님의 말씀으로 훈련된 제자가 되어,<br class="mobile" /> 성령님의 능력으로 지역과 세상을 섬긴다.
                         </p>
                     </div>
                     <ul class="slogan_quick--list">
@@ -476,9 +602,9 @@
                         </div>
                     </div>
                     <div class="media_content">
-                        <div class="media_content--top">
-                            <ul class="media_list">
-                                <li class="media_item">
+                        <div class="media_content--top swiper">
+                            <ul class="media_list swiper-wrapper">
+                                <li class="media_item swiper-slide">
                                     <a href="#">
                                         <div class="img--block">
                                             <img src="/assets/img/media/media_img.jpg" alt="">
@@ -497,7 +623,7 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="media_item">
+                                <li class="media_item swiper-slide">
                                     <a href="#">
                                         <div class="img--block">
                                             <img src="/assets/img/media/media_img.jpg" alt="">
@@ -628,8 +754,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
+                    <div class="photo_swiper_content swiper">
+                        <div class="photo_list swiper-wrapper">
                             <div class="swiper-slide">
                                 <a href="#">
                                     <div class="img--block">
@@ -762,50 +888,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="img--block">
-                                        <img src="/assets/img/photo/photo_img.png" alt="">
-                                    </div>
-                                    <div class="photo_tx--block">
-                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                        <div class="date" lang="en"> 2021.12.31 </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="img--block">
-                                        <img src="/assets/img/photo/photo_img.png" alt="">
-                                    </div>
-                                    <div class="photo_tx--block">
-                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                        <div class="date" lang="en"> 2021.12.31 </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="img--block">
-                                        <img src="/assets/img/photo/photo_img.png" alt="">
-                                    </div>
-                                    <div class="photo_tx--block">
-                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                        <div class="date" lang="en"> 2021.12.31 </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="img--block">
-                                        <img src="/assets/img/photo/photo_img.png" alt="">
-                                    </div>
-                                    <div class="photo_tx--block">
-                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                        <div class="date" lang="en"> 2021.12.31 </div>
-                                    </div>
-                                </a>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -813,34 +896,38 @@
 
             <section class="ask_section">
                 <div class="inner">
-                    <div class="ask_content">
-                        <div class="online--block">
-                            <div class="ask_tx--block">
-                                <p class="ask_tit">온라인 헌금</p>
-                                <p class="ask_subtit">
-                                    헌금 봉헌도 편리하게,<br />
-                                    온라인 헌금을 안내드립니다.
-                                </p>
+                    <div class="swiper">
+                        <div class="ask_content swiper-wrapper">
+                            <div class="online--block swiper-slide">
+                                <div class="ask_tx--block">
+                                    <p class="ask_tit">온라인 헌금</p>
+                                    <p class="ask_subtit">
+                                        헌금 봉헌도 편리하게,<br />
+                                        온라인 헌금을 안내드립니다.
+                                    </p>
+                                </div>
+                                <div class="ask_icon--block">
+                                    <img src="/assets/img/ask/ask_img01.svg" alt="">
+                                </div>
                             </div>
-                            <div class="ask_icon--block">
-                                <img src="/assets/img/ask/ask_img01.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="online--block">
-                            <div class="ask_tx--block">
-                                <p class="ask_tit">문의하기</p>
-                                <p class="ask_subtit">
-                                    궁금하신 문의사항을 남겨주세요<br />
-                                    정성을 다해 답해 드리겠습니다.
-                                </p>
-                            </div>
-                            <div class="ask_icon--block">
-                                <img src="/assets/img/ask/ask_img.svg" alt="">
+                            <div class="online--block swiper-slide">
+                                <div class="ask_tx--block">
+                                    <p class="ask_tit">문의하기</p>
+                                    <p class="ask_subtit">
+                                        궁금하신 문의사항을 남겨주세요<br />
+                                        정성을 다해 답해 드리겠습니다.
+                                    </p>
+                                </div>
+                                <div class="ask_icon--block">
+                                    <img src="/assets/img/ask/ask_img.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+
         </div>
     </main>
     <footer class="footer">
