@@ -18,3 +18,12 @@ body{
     /* font-family: sans-serif; */
     word-break: keep-all;
 }
+
+input{
+    -webkit-appearance: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}

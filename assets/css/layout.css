@@ -140,39 +140,74 @@
 /* sidemenu */
 
 .side_menu--block{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    width: 25%;
+    width: 30%;
     height: 100%;
     z-index: 1000;
-    background: #ccc;
+    background: #fff;
 }
 .side_form{
     display: flex;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+
+}
+.side_form .search_ic--block{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.side_form .search_ic--block i {
+    font-size: 18px;
+}
+.sm-search--label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 22px;
 }
 .side_menu--block .side_menu--inner{
+    height: 100%;
 }
 .side_menu--block .side_menu--inner .side_top--block{
     
-    padding: 50px 20px;
+    padding: 50px 40px;
     background: var(--blue-color);
 }
 .side_top--block .sm-search--block{
+    background: none;
+    border: 0;
     width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 22px;
+    color: #fff;
+    outline: none;
+    border-radius: 0;
+    margin-left: 20px;
+}
+.side_top--block .sm-search--block::placeholder{
+    color: #fff;
 }
 .side_top--block .search_keyword{
     margin-top: 30px;
 }
 .side_top--block .search_keyword ul{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     color: #fff;
 }
 .side_top--block .search_keyword ul li{
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid #eee;
+    padding: 8px 15px;
+    border-radius: 45px;
+    border: 1px solid #f2f2f2;
+    font-size: 12px;
 }
 .side_top--block .search_keyword ul li:first-child{
     border: none;
@@ -183,10 +218,13 @@
 
 .side_bottom--block{
     display: flex;
+    height: 100%;
+    border: 1px solid #000;
 }
 .side_bottom--block .side_bottom--left{
     display: flex;
     width: 40%;
+    height: 100%;
     background: #f8f8f8;
     padding: 20px;
 }
@@ -195,9 +233,21 @@
     flex-direction: column;
     gap: 20px;
 }
-.side_bottom--block .side_bottom--left ul li{}
-
-
+.side_bottom--block .side_bottom--left ul li{
+}
+.side_bottom--block .side_bottom--left ul li a{
+    display: block;
+    padding: 10px 5px;
+    font-size: 18px;
+    color: #a0a0a0;
+    font-weight: 700;
+}
+.side_bottom--left ul li a span {
+}
+.side_bottom--left ul li a span.active{
+    color: var(--blue-color);
+    border-bottom: 2px solid var(--blue-color);
+}
 .side_bottom--block .side_bottom--right{}
 .side_bottom--block .side_bottom--right ul{}
 .side_bottom--block .side_bottom--right ul li{}
