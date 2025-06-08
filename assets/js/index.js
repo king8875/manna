@@ -202,6 +202,29 @@ document.querySelectorAll(".nav_item").forEach(item => {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleBtn = document.querySelector('.header .search_ic--block');
+  const sideMenu = document.querySelector('.side_menu--block');
+  const closeBtn = document.querySelector('.close--btn');
+  const body = document.body;
+
+  closeBtn.addEventListener("click", function() {
+    sideMenu.classList.remove("active");
+    body.classList.remove('scroll-lock');
+  });
+
+  toggleBtn.addEventListener('click', function () {
+    const isOpen = sideMenu.classList.toggle('active');
+    
+    if (isOpen) {
+      body.classList.add('scroll-lock');
+    } else {
+      body.classList.remove('scroll-lock');
+    }
+  });
+});
+
+
 
 
 
@@ -210,6 +233,8 @@ document.querySelectorAll(".nav_item").forEach(item => {
 const mm = gsap.matchMedia();
 // pc
 mm.add("(min-width:1420)", function () {
+
+
 
 });
 // mob

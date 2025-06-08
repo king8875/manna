@@ -13,12 +13,16 @@ fieldset,input{border: 0;}
 img, picture, video, canvas, svg {display: block;max-width:100%;object-fit: cover;}
 
 body{
+    position: relative;
     overflow-x: hidden;
     font-family: 'NotoSansKR', sans-serif;
     /* font-family: sans-serif; */
     word-break: keep-all;
 }
-
+body.scroll-lock{
+    overflow: hidden;
+    transition: all .5s;
+}
 input{
     -webkit-appearance: none;
     -moz-box-sizing: border-box;
