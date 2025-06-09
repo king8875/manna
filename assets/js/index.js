@@ -193,7 +193,21 @@ document.querySelectorAll(".nav_item").forEach(item => {
   });
 });
 
+// sidemenu target js
+document.querySelectorAll('.side_bottom--left a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.dataset.target;
+    const targetEl = document.getElementById(targetId);
 
+    if (targetEl) {
+      targetEl.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
 
 
 
