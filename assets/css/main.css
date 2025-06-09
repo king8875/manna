@@ -1,9 +1,5 @@
 .wrapper{}
 
-
-
-
-
 .visual-swiper--section{
     position: relative;
     margin-top: 70px;
@@ -750,6 +746,43 @@
 
 
 
+/* sns only mobile */
+
+.sns_section--mobile{
+    display: none;
+    padding: 50px 0;
+}
+.sns_section--mobile .sns_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.sns_section--mobile .sns_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.sns_section--mobile .sns_item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.sns_section--mobile .sns_item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f6f6;
+    border-radius: 50%;
+    width: 73px;
+    height: 73px;
+    font-size: 30px;
+}
+
+
+
 /* footer */
 .footer{
     position: relative;
@@ -838,39 +871,6 @@
 }
 
 
-
-
-/*  *//*  *//*  *//*  *//*  *//*  *//*  */
-.test-swiper{
-    position: relative;
-    width: 100%;
-}
-.test-swiper .swiper{
-    width: 100%;
-    padding-bottom: 60px;
-}
-.test-swiper .swiper .swiper-wrapper{}
-.test-swiper .swiper .swiper-wrapper .swiper-slide{}
-.test-swiper .swiper .swiper-wrapper .swiper-slide a{}
-.test-swiper .swiper .swiper-wrapper .swiper-slide a img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#testSwiper .swiper-pagination{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-#testSwiper .swiper-pagination-bullet{
-    width: 5px;
-    height: 5px;
-}
-#testSwiper .swiper-pagination-bullet:hover{
-}
-/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
 
 
 
@@ -1063,6 +1063,16 @@
         justify-content: space-between;
         padding: 100px 0;
         gap: 100px;
+    }
+
+
+
+
+    /* sns only mobile */
+
+    .sns_section--mobile{
+        display: block;
+        padding: 50px 0;
     }
 
 }

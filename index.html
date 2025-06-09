@@ -22,10 +22,48 @@
 
 
 
+    <div class="side_menu_overlay"><span class="blind">사이드메뉴 오버레이</span></div>
+
+
+    <div class="mobile_nav_bar">
+        <ul class="mobile_nav_bar--list">
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-solid fa-cross"></i></div>
+                    <span>설교</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-solid fa-book"></i></div>
+                    <span>주보</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-regular fa-file"></i></div>
+                    <span>QT</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-regular fa-user"></i></div>
+                    <span>MY</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-solid fa-bars"></i></div>
+                    <span>메뉴</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
 
     
     <div class="side_menu--block" id="sideMenu">
-        <div class="side_menu_overlay"><span class="blind">사이드메뉴 오버레이</span></div>
+
         <div class="side_menu--inner">
             <div class="side_top--block">
                 <button class="btn close--btn">
@@ -126,6 +164,37 @@
 
 
     <header class="header">
+
+
+        <div class="side_menu--block--mobile">
+            <button class="btn close--btn">
+                <i id="closeBtn" class="fa-solid fa-xmark"></i>
+                <span class="blind">close</span>
+            </button>
+            <div class="sm_inner--mobile">
+                <form class="side_form" action="/">
+                    <label class="sm-search--label" for="sm-search--block">검색어를 입력해 주세요</label>
+                    <div class="search_ic--block">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" class="sm-search--block" placeholder="검색어를 입력해 주세요" />
+                </form>
+               
+                <div class="search_keyword">
+                    <p>추천 검색어</p>
+                    <ul>
+                        <li><a href="">주보</a></li>
+                        <li><a href="">교우소식</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
         <div class="header_inner pc">
             <div class="logo--block">
                 <a href="#">
@@ -948,8 +1017,57 @@
             </section>
 
 
+            <section class="sns_section--mobile">
+                <div class="inner">
+                    <div class="section_title--block">
+                        <h2 class="tit-tx">만나 SNS 채널</h2>
+                    </div>
+                    <ul class="sns_list">
+                        <li class="sns_item">
+                            <div class="blind">viemo link</div>
+                            <a href="#">
+                                <i class="fa-brands fa-vimeo-v"></i>
+                                <span>비메오</span>
+                            </a>
+                        </li>
+                        <li class="sns_item">
+                            <div class="blind">viemo link</div>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>  
+                                <span>유튜브</span>
+                            </a>
+                        </li>
+                        <li class="sns_item">
+                            <div class="blind">viemo link</div>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>인스타</span>
+                            </a>
+                        </li>
+                        <li class="sns_item">
+                            <div class="blind">viemo link</div>
+                            <a href="#">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>카카오톡</span>
+                            </a>
+                        </li>
+                        <li class="sns_item">
+                            <div class="blind">viemo link</div>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>페이스북</span>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </section>
+
+
         </div>
     </main>
+
+
     <footer class="footer">
         <div class="footer_totop--btn" id="GoToTop">
             <span class="totop_ic"></span>
