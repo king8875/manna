@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>훈련</title>
+    <link rel="stylesheet" href="assets/css/train.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <!-- swiper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- font aw -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- js -->
+    <script src="assets/js/train.js" defer></script>
+    <script src="assets/js/common.js" defer></script>
+    <!-- swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+    <div class="mobile_nav_bar">
+        <ul class="mobile_nav_bar--list">
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-solid fa-cross"></i></div>
+                    <span>설교</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-solid fa-book"></i></div>
+                    <span>주보</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-regular fa-file"></i></div>
+                    <span>QT</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-regular fa-user"></i></div>
+                    <span>MY</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-solid fa-bars"></i></div>
+                    <span>메뉴</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="side_menu--block" id="sideMenu">
+
+        <div class="side_menu--inner">
+            <div class="side_top--block">
+                <button class="btn close--btn">
+                    <i id="closeBtn" class="fa-solid fa-xmark"></i>
+                    <span class="blind">close</span>
+                </button>
+                <form class="side_form" action="/">
+                    <!-- <label class="sm-search--label" for="sm-search--block">검색어를 입력해 주세요</label> -->
+                    <div class="search_ic--block">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" class="sm-search--block" placeholder="검색어를 입력해 주세요">
+                </form>
+                <div class="search_keyword">
+                    <ul>
+                        <li>추천</li>
+                        <li>교유소식</li>
+                        <li>주보</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="side_bottom--block">
+                <div class="side_bottom--left">
+                    <ul>
+                        <li><a href="#" data-target="sidelist_01"><span class="active">예배</span></a></li>
+                        <li><a href="#" data-target="sidelist_02"><span>강의</span></a></li>
+                        <li><a href="#" data-target="sidelist_03"><span>소모임</span></a></li>
+                        <li><a href="#" data-target="sidelist_04"><span>훈련</span></a></li>
+                        <li><a href="#" data-target="sidelist_05"><span>섬김</span></a></li>
+                        <li><a href="#" data-target="sidelist_06"><span>미디어</span></a></li>
+                        <li><a href="#" data-target="sidelist_07"><span>교회소개</span></a></li>
+                        <li><a href="#" data-target="sidelist_08"><span>행정</span></a></li>
+    
+                    </ul>
+                </div>
+                <div class="side_bottom--right">
+                    <ul id="sidelist_01">
+                        <li class="side_right--tit"><a href=""><span>예배</span></a></li>
+                        <li><a href=""><span>설교</span></a></li>
+                        <li><a href=""><span>예배실황</span></a></li>
+                        <li><a href=""><span>예배안내</span></a></li>
+                    </ul>
+                    <ul id="sidelist_02">
+                        <li class="side_right--tit"><a href="">강의</a></li>
+                        <li><a href="">강의 콘텐츠</a></li>
+                    </ul>
+                    <ul id="sidelist_03">
+                        <li class="side_right--tit"><a href="">소모임</a></li>
+                        <li><a href="">모임 참여</a></li>
+                    </ul>
+                    <ul id="sidelist_04">
+                        <li class="side_right--tit"><a href="">훈련</a></li>
+                        <li><a href="">프로그램</a></li>
+                    </ul>
+                    <ul id="sidelist_05">
+                        <li class="side_right--tit"><a href="">미디어</a></li>
+                        <li><a href="">영상</a></li>
+                        <li><a href="">주보</a></li>
+                        <li><a href="">QT</a></li>
+                        <li><a href="">만나포토</a></li>
+                    </ul>
+                    <ul id="sidelist_06">
+                        <li class="side_right--tit"><a href="">교회소개</a></li>
+                        <li><a href="">만나소개</a></li>
+                        <li><a href="">섬기는 이들</a></li>
+                        <li><a href="">건물안내</a></li>
+                        <li><a href="">셔틀버스 안내</a></li>
+                        <li><a href="">오시는 길</a></li>
+                    </ul>
+                    <ul id="sidelist_07">
+                        <li class="side_right--tit"><a href="">행정</a></li>
+                        <li><a href="">교우소식</a></li>
+                        <li><a href="">행정서비스</a></li>
+                        <li><a href="">프로그램 신청</a></li>
+                        <li><a href="">자주하는 질문</a></li>
+                        <li><a href="">자료실</a></li>
+                        <li><a href="">문의하기</a></li>
+                    </ul>
+                    <ul id="sidelist_08">
+                        <li class="side_right--tit"><a href="">만나 SNS 채널</a></li>
+                        <li>
+                            <a href="">
+                                비메오
+                                <a href="#" class="youtube_ic">
+                                    <div class="blind">viemo link</div>
+                                </a>
+                            </a>
+                        </li>
+                        <li><a href="">유튜브</a></li>
+                        <li><a href="">인스타그램</a></li>
+                        <li><a href="">카카오톡</a></li>
+                        <li><a href="">페이스북</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="side_menu--block--mobile">
+            <button class="btn close--btn">
+                <i id="closeBtn" class="fa-solid fa-xmark"></i>
+                <span class="blind">close</span>
+            </button>
+            <div class="sm_inner--mobile">
+                <form class="side_form" action="/">
+                    <label class="sm-search--label" for="sm-search--block">검색어를 입력해 주세요</label>
+                    <div class="search_ic--block">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" class="sm-search--block" placeholder="검색어를 입력해 주세요" />
+                </form>
+               
+                <div class="search_keyword">
+                    <p>추천 검색어</p>
+                    <ul>
+                        <li><a href="">주보</a></li>
+                        <li><a href="">교우소식</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_inner pc">
+            <div class="logo--block">
+                <a href="#">
+                    <img src="/assets/img/header/logo.svg" alt="메인로고이미지">
+                </a>
+            </div>
+            <div class="nav--block">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#" class="nav_item--link">예배</a>
+                        <ul class="sub_list">
+                            <li class="sub_item">
+                                <a href="#">설교</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배실황</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배안내</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_item--link">강의</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_item--link">소모임</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_item--link">훈련</a>
+                        <ul class="sub_list">
+                            <li class="sub_item">
+                                <a href="#">설교</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배실황</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배안내</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_item--link">섬김</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_item--link">미디어</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_item--link">교회소개</a>
+                        <ul class="sub_list">
+                            <li class="sub_item">
+                                <a href="#">설교</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배실황</a>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#">예배안내</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_item--link">행정</a>
+                    </li>
+                </ul>
+                <div class="search_ic--block">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="login--block">
+                <ul class="login_list">
+                    <li>
+                        <a class="login--btn" href="">로그인</a>
+                    </li>
+                    <li>
+                        <a class="login--btn" href="">회원가입</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header_mobile">
+            <div class="header_mobile--top">
+                <div class="logo--block">
+                    <a href="#">
+                        <img src="/assets/img/header/logo.svg" alt="메인로고이미지">
+                    </a>
+                </div>
+                <div class="search_ic--block">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="mobilenav--block">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#">홈</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="active">예배</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">강의</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">소모임</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">훈련</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">섬김</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">미디어</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">교회소개</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">행정</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+
+
+            <div class="article_header--block">
+                <div class="inner">
+                    <ul class="jt-breadcrumb">
+                        <li class="bc-item">
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="bc-item">
+                            <a href="#">
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                        </li>
+                        <li class="bc-item">
+                            <a href="#">
+                                훈련
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="article_header-tx">훈련</h2>
+                    <div class="article_header_img--block">
+                        <div class="img--block"><img src="assets/img/train/header_img.jpg" alt=""></div>
+                        <div class="img--desc">
+                            <strong>예수님의 말씀으로 훈련합니다</strong>
+                            <p>하나님의 사람을 세우는 교육과 참된 행복을 주는 말씀 훈련</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <section class="train_section">
+                <div class="inner">
+                    <div class="train_content">
+                        <div class="train_header--block">
+                            <h2 class="train_header--tit">최신프로그램</h2>
+                            <ul class="train_tab--list">
+                                <li class="train_tab--item">전체</li>
+                                <li class="train_tab--item">리더십</li>
+                            </ul>
+                            <div class="train_select--block">
+                                <div class="select--btn">
+                                    <span>전체 부서</span>
+                                </div>
+                                <div class="select--btn">
+                                    <span>전체 사역</span>
+                                </div>
+                                <div class="reload_ic"><i class="fa-solid fa-rotate-right"></i></div>
+                            </div>
+                        </div>
+
+
+                        <div class="train_body--block">
+                            <div class="train_body--header">
+                                <p><span>91</span>개 프로그램</p>
+                                <div class="train_body--util">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <i class="fa-solid fa-bars"></i>
+                                    <div class="sort--btn">
+                                        <span>등록순</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <ul class="train_body--list">
+                                <li class="train_body--item">
+
+
+
+                                    <div class="train_item--left">
+                                        <div class="tr_data--group">
+                                            <span class="tr_cat">리더십</span>
+                                            <span class="tr_time" lang="en">2025.05.23 - 2025.03.09</span>
+                                        </div>
+                                        <a href="#" class="tr_tit">미디어동산 성찬투어</a>
+                                        <div class="tr_deadline">
+                                            <span>신청</span>
+                                            <span>06월 21일까지</span>
+                                        </div>
+                                        <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+
+
+
+
+                                    <div class="train_item--right">
+                                        <div class="tr_detail--btn">
+                                            <span>자세히보기</span>
+                                        </div>
+                                        <div class="tr_submit--btn">
+                                            <span>신청하기</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="footer_totop--btn" id="GoToTop">
+            <span class="totop_ic"></span>
+            <span class="blind">위로 올라가기</span>
+        </div>
+        <div class="inner">
+            <div class="footer_top">
+                <nav>
+                    <ul class="footer_nav--list">
+                        <li class="footer_nav--item">
+                            <a href="#" class="active">개인정보처리방침</a>
+                        </li>
+                        <li class="footer_nav--item">
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li class="footer_nav--item">
+                            <a href="#">이메일무단수집거부</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_info">
+                    <p lang="en">(우) 13440 경기도 성남시 분당구 양현로 353 (야탑동 393)</p>
+                    <p lang="en">TEL. 031-706-3351 FAX. 031-706-3350고유번호 : 129-82-60509</p>
+                </div>
+                <ul class="footer_sns_wrap">
+                    <li class="footer_sns--item">
+                        <a href="#" class="viemo_ic">
+                            <div class="blind">viemo link</div>
+                        </a>
+                    </li>
+                    <li class="footer_sns--item">
+                        <a href="#" class="youtube_ic">
+                            <div class="blind">viemo link</div>
+                        </a>
+                    </li>
+                    <li class="footer_sns--item">
+                        <a href="#" class="instar_ic">
+                            <div class="blind">viemo link</div>
+                        </a>
+                    </li>
+                    <li class="footer_sns--item">
+                        <a href="#" class="chat_ic">
+                            <div class="blind">viemo link</div>
+                        </a>
+                    </li>
+                    <li class="footer_sns--item">
+                        <a href="#" class="facebook_ic">
+                            <div class="blind">viemo link</div>
+                        </a>
+                    </li>
+                </ul>
+                <p lang="en" class="copyright">
+                    ©MANNA CHURCH. ALL RIGHTS RESERVED. DESIGNED BY STUDIO-JT.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

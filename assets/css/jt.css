@@ -50,27 +50,6 @@ main{
     overflow: hidden;
 }
 
-/* article header */
-.article_header--block{
-    margin-top: 100px;
-}
-.article_header--block .jt-breadcrumb{
-    display: flex;
-    gap: 20px;
-    padding: 50px 0;
-}
-.article_header--block .jt-breadcrumb .bc-item{ 
-    font-size: 12px;
-}
-.article_header--block .jt-breadcrumb .bc-item a{}
-.article_header--block .article_header-tx{
-    font-size: 50px;
-    border-bottom: 1px solid #222;
-    padding-bottom: 20px;
-    letter-spacing: -0.025em;
-    text-indent: -0.4rem;
-    font-weight: 700;
-}
 
 .article_body{
     position: relative;
