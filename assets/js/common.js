@@ -113,3 +113,40 @@ closeBtn.addEventListener("click", function () {
     body.classList.remove('scroll-lock');
 
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    let askSwiper = null;
+  
+    function updateToggleBehavior() {
+      const width = window.innerWidth;
+  
+      if (width < 1020) {
+        if (!askSwiper) {
+          askSwiper = new Swiper('.ask_section .swiper', {
+            effect:"fade",
+            loop:true,
+            autoplay:true,
+            delay: 1000,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          });
+        }
+      } else {
+        if (askSwiper) {
+          askSwiper.destroy(true, true);
+          askSwiper = null;
+        }
+      }
+    }
+  
+    updateToggleBehavior();
+    window.addEventListener('resize', updateToggleBehavior);
+  });
+  
+  

@@ -31,3 +31,5 @@ input{
     outline: none;
     font-family: sans-serif;
 }
+
+section{ position: relative; }

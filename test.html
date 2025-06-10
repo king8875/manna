@@ -22,6 +22,45 @@
 
 </head>
 <body>
+
+
+
+
+    <div class="mobile_nav_bar">
+        <ul class="mobile_nav_bar--list">
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-solid fa-cross"></i></div>
+                    <span>설교</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-solid fa-book"></i></div>
+                    <span>주보</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-regular fa-file"></i></div>
+                    <span>QT</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-regular fa-user"></i></div>
+                    <span>MY</span>
+                </a>
+            </li>
+            <li class="mobile_nav_bar--item">
+                <a href="#">
+                    <div class="cross_ic"><i class="fa-solid fa-bars"></i></div>
+                    <span>메뉴</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <header class="header">
         <div class="side_menu--block--mobile">
             <button class="btn close--btn">
@@ -143,10 +182,10 @@
             <div class="mobilenav--block">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#" class="active">홈</a>
+                        <a href="#">홈</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#">예배</a>
+                        <a href="#" class="active">예배</a>
                     </li>
                     <li class="nav_item">
                         <a href="#">강의</a>
@@ -172,9 +211,6 @@
                 </ul>
             </div>
         </div>
-
-
-
     </header>
 
     <main>
@@ -201,7 +237,6 @@
                     </ul>
                     <h2 class="article_header-tx">예배</h2>
                 </div>
-
             </div>
 
             <div class="article_body">
@@ -240,27 +275,40 @@
                                 </a>
                             </div>
                             <div class="video_content--bottom">
-                                <div class="content--bot-desc">
+                                <div class="content--bot-desc expanded">
                                     2025-06-08<br />
                                     본문 : 에베소서 4:11-13<br />
                                     11 그가 어떤 사람은 사도로, 어떤 사람은 선지자로, 어떤 사람은 복음 전하는 자로, 어떤 사람은 목사와 교사로 삼으셨으니<br />
                                     12 이는 성도를 온전하게 하여 봉사의 일을 하게 하며 그리스도의 몸을 세우려 하심이라<br />
                                     13 우리가 다 하나님의 아들을 믿는 것과 아는 일에 하나가 되어 온전한 사람을 이루어 그리스도의 장성한 분량이 충만한 데까지 이르리니
                                 </div>
-                                <a href="#" class="content--bot-more">간략히</a>
+                                <a href="#" class="content--bot-more">
+                                    <span>간략히</span>
+                                    <i class="fa-solid fa-caret-up more-arrow"></i>
+                                    <i class="fa-solid fa-caret-down more-arrow"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </section>
 
 
+                <section class="main_section_separator"></section>
+
+
                 <section class="lately_section">
                     <div class="inner">
                         <div class="jt-sub-title--block">
-                            <a href="#" class="jt-sub-title--link">최근 설교</a>
+                            <a href="#" class="jt-sub-title--link">
+                                최근 설교
+                                <span>></span>
+                            </a>
                             <a href="#" class="jt-sub-title--btn">
                                 <span>자세히보기</span>
-                                <i class="fa-solid fa-arrow-right"></i>
+                                <div class="arrow-ic--block">
+                                    <i class="fa-solid fa-arrow-right first-arrow"></i>
+                                    <i class="fa-solid fa-arrow-right second-arrow"></i>
+                                </div>
                             </a>
                         </div>
 
@@ -315,12 +363,23 @@
                     </div>
                 </section>
 
+
+
+                <section class="main_section_separator"></section>
+
                 <section class="seris_section">
                     <div class="inner">
                         <div class="jt-sub-title--block">
-                            <a href="#" class="jt-sub-title--link">설교 시리즈</a>
+                            <a href="#" class="jt-sub-title--link">
+                                설교 시리즈
+                                <span>></span>
+                            </a>
                             <a href="#" class="jt-sub-title--btn">
                                 <span>자세히보기</span>
+                                <div class="arrow-ic--block">
+                                    <i class="fa-solid fa-arrow-right first-arrow"></i>
+                                    <i class="fa-solid fa-arrow-right second-arrow"></i>
+                                </div>
                             </a>
                         </div>
 
@@ -568,15 +627,21 @@
                     </div>
                 </section>
 
+                <section class="main_section_separator"></section>
+
+
                 <section class="jtnotice_section">
                     <div class="inner">
                         <div class="jtnotice_content">
                             <div class="jtfull--block">
                                 <h2 class="notice-tit">
-                                    예배실황(풀영상)
-                                    <span class="arrow">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </span>
+                                    <a href="#" class="jt-sub-title--btn">
+                                        <span>예배실황(풀영상)</span>
+                                        <div class="arrow-ic--block">
+                                            <i class="fa-solid fa-arrow-right first-arrow"></i>
+                                            <i class="fa-solid fa-arrow-right second-arrow"></i>
+                                        </div>
+                                    </a>
                                 </h2>
                                 <ul>
                                     <li>
@@ -599,13 +664,19 @@
                                     </li>
                                 </ul>
                             </div>
+                            <section class="main_section_separator"></section>
+
                             <div class="jttoday--block">
                                 <h2 class="notice-tit">
-                                    오늘의 예배안내
-                                    <span class="arrow">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </span>
-                                    <p lang="en">2025.06.10</p>
+                                  
+                                    <a href="#" class="jt-sub-title--btn">
+                                        <span>오늘의 예배안내</span>
+                                        <div class="arrow-ic--block">
+                                            <i class="fa-solid fa-arrow-right first-arrow"></i>
+                                            <i class="fa-solid fa-arrow-right second-arrow"></i>
+                                        </div>
+                                        <p class="date" lang="en">2025.06.10</p>
+                                    </a>
                                 </h2>
                                 <ul>
                                     <li>
@@ -642,6 +713,8 @@
                                 </ul>
 
                             </div>
+                            <section class="main_section_separator"></section>
+
                         </div>
                     </div>
                 </section>
@@ -653,9 +726,10 @@
                             <div class="ask_content swiper-wrapper">
                                 <div class="online--block swiper-slide">
                                     <div class="ask_tx--block">
-                                        <p class="ask_tit">Interpretation</p>
+                                        <p class="ask_tit">온라인 헌금</p>
                                         <p class="ask_subtit">
-                                            9時50分：日本語同時通訳 / 9点50分： <br />汉语同声传译
+                                            헌금 봉헌도 편리하게,<br />
+                                            온라인 헌금을 안내드립니다.
                                         </p>
                                     </div>
                                     <div class="ask_icon--block">
@@ -664,9 +738,10 @@
                                 </div>
                                 <div class="online--block swiper-slide">
                                     <div class="ask_tx--block">
-                                        <p class="ask_tit">만나 주보</p>
+                                        <p class="ask_tit">문의하기</p>
                                         <p class="ask_subtit">
-                                          열방을 가슴에 품고 성도와 함께 복음을<br />나누는 만나교회 소식을 전해드려요.
+                                            궁금하신 문의사항을 남겨주세요<br />
+                                            정성을 다해 답해 드리겠습니다.
                                         </p>
                                     </div>
                                     <div class="ask_icon--block">
@@ -674,38 +749,13 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="ask-swiper-pagination swiper-pagination"></div>
                         </div>
                     </div>
                 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
-
-            .
-
-
-
-
-
         </div>
     </main>
-
 
 
    <footer class="footer">

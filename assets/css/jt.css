@@ -5,13 +5,50 @@ main{
 /* jt common */
 
 .jt-sub-title--block{}
-.jt-sub-title--block .jt-sub-title--link{}
-.jt-sub-title--block .jt-sub-title--btn{}
-.jt-sub-title--block .jt-sub-title--btn span{}
-.jt-sub-title--block .jt-sub-title--btn span::before{}
-.jt-sub-title--block .jt-sub-title--btn span::after{}
+.jt-sub-title--block .jt-sub-title--link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.jt-sub-title--block .jt-sub-title--link span{
+    display: none;
+}
+.jt-sub-title--btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+.jt-sub-title--btn i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    transition: all .4s ease;
+    z-index: 0;
+}
+.second-arrow{
+    transform: translateX(-100%);
+}
+.jt-sub-title--btn:hover .first-arrow{
+    transform: translateX(100%);
+    opacity: 0;
+}
+.jt-sub-title--btn:hover .second-arrow{
+    transform: translateX(0%);
 
+}
 
+.arrow-ic--block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
 
 /* article header */
 .article_header--block{
@@ -122,6 +159,7 @@ main{
     background-size: 32px 32px;
 }
 .video_section .video_content{
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -197,6 +235,7 @@ main{
     transition: all .3s ease;
     overflow: hidden;
 }
+
 .content--bot-desc.expanded {
     max-height: 90px; 
 }
@@ -327,18 +366,21 @@ main{
 .notice-tit{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
     font-size: 24px;
-    font-weight: 700;
     padding: 20px 0;
     border-bottom: 1px solid #000;
 }
-.notice-tit .arrow{
-    font-size: 15px;
+.notice-tit .jt-sub-title--btn{
+    width: 100%;
 }
-.notice-tit .arrow i{
+.notice-tit span{
+    font-size: 24px;
+    font-weight: 700 !important;
 }
-.notice-tit p{
+
+.notice-tit .date{
     margin-left: auto;
     font-size: 15px;
 }
@@ -422,3 +464,116 @@ main{
 
 
 
+
+@media (max-width:1330px) {
+
+  
+}
+
+
+
+
+
+
+
+@media (max-width:1020px) {
+    main{ margin-top: 200px; }
+
+
+    .article_header--block{
+        display: none;
+    }
+    .video_section .inner {padding: 0;}
+    .video_section .video_header{ padding: 20px; }
+    .video_section .video_content{ padding: 20px; }
+    .video_wrapper{
+        margin: 0;
+    }
+    .video_content--bottom .content--bot-more{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #000;
+        border-bottom: none;
+    }
+    .video_content--bottom .content--bot-more span{display: none;}
+    .video_content--bottom .content--bot-desc{
+        line-height: 1.7;
+    }
+    .video_content--bottom .content--bot-desc.expanded::after{
+        content: '';
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 80%);
+    }
+    .jt-sub-title--block .jt-sub-title--link span{
+        display: inline-block;
+        font-size: 24px;
+    }
+
+    .lately_section .jt-sub-title--btn,
+    .seris_section .jt-sub-title--btn
+    {
+        display: none;
+    }
+
+
+
+    /* jtnotice */
+    .jtnotice_section{
+        margin: 0;
+    }
+    .jtnotice_section .inner{
+        padding: 0;
+    }
+    .jtnotice_content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .jtnotice_content .jtfull--block{
+        width: 100%;
+        padding: 20px;
+    }
+    .jtnotice_content .jttoday--block{
+        width: 100%;
+        padding: 20px;
+    }
+    .jttoday--block ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .jttoday--block ul li{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex: 1;
+        transition: all .5s;
+    }
+    .jttoday--block .jttoday_location{
+        width: 100%;
+    }
+    .jttoday--block .jttoday_location .location-tit{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .jttoday--block .jttoday_location .location-tit span{
+        display: inline-block;
+        margin: 0px;
+    }
+    .jttoday_location.open .jttoday_hidden--block {
+        width: 100%;
+        flex: 1;
+        display: block;
+        max-height: 100px; /* 충분히 크게 설정 */
+        opacity: 1;
+        transition: all .3s;
+    }
+}
