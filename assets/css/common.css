@@ -20,12 +20,42 @@ section{
     clip: rect(0,0,0,0);
 }
 
-.swiper-button-next, .swiper-button-prev{
-    color: #b2b2b2 !important;
+.swiper-button-next, .swiper-button-prev{ color: #b2b2b2 !important; }
+.swiper-button-next:after, .swiper-button-prev:after{
 }
 .mobile{ display: none; }
 
 
+
+
+.jt-sub-title--block,
+.section_title--block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0 20px 0;
+
+}
+.jt-sub-title--block,
+.section_title--block .tit-tx{
+    font-size: 32px;
+    font-weight: 900;
+}
+.jt-sub-title--btn,
+.section_title--block .more--block{
+    font-size: 17px;
+
+}
+.section_title--block .more--block a{
+    display: block;
+
+}
+.jt-sub-title--btn span,
+.section_title--block .more--block a span{
+    color: #222;
+    font-weight: 600;
+}
 
 @media (max-width:1400px) {
     .inner{

@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/jt.css">
     <link rel="stylesheet" href="/assets/css/layout.css">
-    <script src="/assets/js/index.js" defer></script>
     <!-- swiper link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- font aw -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- js -->
+    <script src="assets/js/jt.js" defer></script>
+    <script src="assets/js/common.js" defer></script>
     <!-- swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- gsap -->
@@ -21,8 +23,6 @@
 </head>
 <body>
     <header class="header">
-
-
         <div class="side_menu--block--mobile">
             <button class="btn close--btn">
                 <i id="closeBtn" class="fa-solid fa-xmark"></i>
@@ -46,11 +46,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
 
         <div class="header_inner pc">
             <div class="logo--block">
@@ -182,7 +177,534 @@
 
     </header>
 
-    <main></main>
+    <main>
+        <div class="wrapper">
+
+            <div class="article_header--block">
+                <div class="inner">
+                    <ul class="jt-breadcrumb">
+                        <li class="bc-item">
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="bc-item">
+                            <a href="#">
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                        </li>
+                        <li class="bc-item">
+                            <a href="#">
+                                예배
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="article_header-tx">예배</h2>
+                </div>
+
+            </div>
+
+            <div class="article_body">
+
+                <section class="video_section">
+                    <div class="inner">
+                        <div class="video_header">
+                            <h3 class="h3-tx">
+                                예배안내
+                                <img src="/assets/img/jt/upload.jpg" alt="">
+                            </h3>
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                생방송 안내
+                            </span>
+                        </div>
+                        <div class="video_wrapper">
+                            <div class="video_overlay"></div>
+                            <span class="video_overlay--btn">
+                                <i class="fa-solid fa-caret-right" style="color: #0f4c82;"></i>
+                            </span>
+                            <div class="video_poster_img">
+                                <img src="/assets/img/jt/video_img.png" alt="">
+                            </div>
+                            <!-- <iframe title="만나교회 [주일예배] 4.그리스도를 본받아 / 김병삼 목사 | 에베소서 4:11-13" id="video-uid-59WinVR-ibA" src="https://www.youtube.com/embed/59WinVR-ibA?version=3&amp;loop=1&amp;autoplay=0&amp;rel=0&amp;showsearch=0&amp;showinfo=0&amp;enablejsapi=1&amp;playsinline=1&amp;origin=https://manna.or.kr" width="500" height="281" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe> -->
+                        </div>
+                        <div class="video_content">
+                            <div class="video_content--top">
+                                <a href="#" class="content--top-subcat">주말의 명작</a>
+                                <a href="#" class="content--top-tit">4.그리스도를 본받아</a>
+                                <div class="content--top-meta">에베소서 4:11-13</div>
+                                <div class="content--top-author">김병삼 목사</div>
+                                <div class="content--top-time" lang="en">2025.06.08</div>
+                                <a href="#" class="content--top-thumb">
+                                    <img src="/assets/img/jt/thumb_img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="video_content--bottom">
+                                <div class="content--bot-desc">
+                                    2025-06-08<br />
+                                    본문 : 에베소서 4:11-13<br />
+                                    11 그가 어떤 사람은 사도로, 어떤 사람은 선지자로, 어떤 사람은 복음 전하는 자로, 어떤 사람은 목사와 교사로 삼으셨으니<br />
+                                    12 이는 성도를 온전하게 하여 봉사의 일을 하게 하며 그리스도의 몸을 세우려 하심이라<br />
+                                    13 우리가 다 하나님의 아들을 믿는 것과 아는 일에 하나가 되어 온전한 사람을 이루어 그리스도의 장성한 분량이 충만한 데까지 이르리니
+                                </div>
+                                <a href="#" class="content--bot-more">간략히</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="lately_section">
+                    <div class="inner">
+                        <div class="jt-sub-title--block">
+                            <a href="#" class="jt-sub-title--link">최근 설교</a>
+                            <a href="#" class="jt-sub-title--btn">
+                                <span>자세히보기</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="jt-swiper--block">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="img--block"><img src="/assets/img/jt/video_img.png" alt=""></div>
+                                            <p>4.그리스도를 본받아</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="img--block"><img src="/assets/img/jt/video_img.png" alt=""></div>
+                                            <p>4.그리스도를 본받아</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="img--block"><img src="/assets/img/jt/video_img.png" alt=""></div>
+                                            <p>4.그리스도를 본받아</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="img--block"><img src="/assets/img/jt/video_img.png" alt=""></div>
+                                            <p>4.그리스도를 본받아</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="img--block"><img src="/assets/img/jt/video_img.png" alt=""></div>
+                                            <p>4.그리스도를 본받아</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <div class="img--block"><img src="/assets/img/jt/video_img.png" alt=""></div>
+                                            <p>4.그리스도를 본받아</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn prev swiper-button-prev">
+                                <span class="blind">이전</span>
+                            </div>
+                            <div class="btn next swiper-button-next">
+                                <span class="blind">다음</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seris_section">
+                    <div class="inner">
+                        <div class="jt-sub-title--block">
+                            <a href="#" class="jt-sub-title--link">설교 시리즈</a>
+                            <a href="#" class="jt-sub-title--btn">
+                                <span>자세히보기</span>
+                            </a>
+                        </div>
+
+                        <div class="jt-swiper--block">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="seris_link">
+                                            <div class="img--block">
+                                                <div class="img-overlay"></div>
+                                                <img src="/assets/img/jt/seris_img01.jpg" alt="">
+                                                <div class="seris-slide--tx">
+                                                    <p>주말의 명작</p>
+                                                </div>
+                                                <div class="seris-slide--num">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                            <div class="seris-tx--block">
+                                                <strong>주말의 명작</strong>
+                                                <p lang="en">2025.05.17 ~ 2025.12.31 </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="btn prev swiper-button-prev">
+                                <span class="blind">이전</span>
+                            </div>
+                            <div class="btn next swiper-button-next">
+                                <span class="blind">다음</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="jtnotice_section">
+                    <div class="inner">
+                        <div class="jtnotice_content">
+                            <div class="jtfull--block">
+                                <h2 class="notice-tit">
+                                    예배실황(풀영상)
+                                    <span class="arrow">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-video"></i>
+                                            주말예배
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-video"></i>
+                                            주말예배
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-video"></i>
+                                            주말예배
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="jttoday--block">
+                                <h2 class="notice-tit">
+                                    오늘의 예배안내
+                                    <span class="arrow">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                    <p lang="en">2025.06.10</p>
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <p class="time">새벽 5시 30분</p>
+                                        <div class="jttoday_location">
+                                            <p class="location-tit">
+                                                매일기도회
+                                                <span class="location-toggle">
+                                                    다니엘홀(B1)
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </span>
+                                            </p>
+                                            <div class="jttoday_hidden--block">
+                                                <p>매일 아침, 특별한 새벽기도회</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="time">새벽 5시 30분</p>
+                                        <div class="jttoday_location">
+                                            <p class="location-tit">
+                                                매일기도회
+                                                <span class="location-toggle">
+                                                    다니엘홀(B1)
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </span>
+                                            </p>
+                                            <div class="jttoday_hidden--block">
+                                                <p>매일 아침, 특별한 새벽기도회</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                   
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="ask_section">
+                    <div class="inner">
+                        <div class="swiper">
+                            <div class="ask_content swiper-wrapper">
+                                <div class="online--block swiper-slide">
+                                    <div class="ask_tx--block">
+                                        <p class="ask_tit">Interpretation</p>
+                                        <p class="ask_subtit">
+                                            9時50分：日本語同時通訳 / 9点50分： <br />汉语同声传译
+                                        </p>
+                                    </div>
+                                    <div class="ask_icon--block">
+                                        <img src="/assets/img/ask/ask_img01.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="online--block swiper-slide">
+                                    <div class="ask_tx--block">
+                                        <p class="ask_tit">만나 주보</p>
+                                        <p class="ask_subtit">
+                                          열방을 가슴에 품고 성도와 함께 복음을<br />나누는 만나교회 소식을 전해드려요.
+                                        </p>
+                                    </div>
+                                    <div class="ask_icon--block">
+                                        <img src="/assets/img/ask/ask_img.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            .
+
+
+
+
+
+        </div>
+    </main>
 
 
 
