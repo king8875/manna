@@ -12,6 +12,62 @@
     position: relative;
 }
 .visual-swiper--section .swiper .swiper-wrapper .swiper-slide{}
+.visual-swiper--section .swiper .swiper-wrapper .swiper-slide .img--block{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.8); 
+
+}
+#visualSwiper .swiper_control--block{
+    position: absolute;
+    top: 200px;
+    left: 190px;
+}
+.playControl-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 140px;
+    margin-bottom: 16px;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    background: #ccc;
+}
+.playControl-wrapper.playing{
+}
+
+.playControl-wrapper span {
+    cursor: grab;
+}
+.playControl-wrapper i {
+    font-size: 12px;
+    color: #fff;
+}
+.autoplay-btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#visualSwiper .visual-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+#visualSwiper .visual-pagination .swiper-pagination-bullet{
+    border: 1px solid #fff;
+    background: transparent;
+    opacity: 1;
+}
+#visualSwiper .visual-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #fff;
+}
 .visual-swiper--section .btn{
     position: absolute;
     top: 50%;

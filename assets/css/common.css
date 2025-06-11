@@ -50,7 +50,8 @@ section{
 
 }
 .section_title--block .more--block a{
-    display: block;
+    display: flex;
+    gap: 5px;
 
 }
 .jt-sub-title--btn span,
@@ -58,6 +59,50 @@ section{
     color: #222;
     font-weight: 600;
 }
+
+
+
+
+.more--block{
+    overflow: hidden;
+}
+
+.more--block i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    transition: all .4s ease;
+    z-index: 0;
+}
+.second-arrow{
+    transform: translateX(-100%);
+}
+.more--block:hover .first-arrow{
+    transform: translateX(100%);
+    opacity: 0;
+}
+.more--block:hover .second-arrow{
+    transform: translateX(0%);
+
+}
+
+
+
+
+.arrow-ic--block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+
+
+
 
 @media (max-width:1400px) {
     .inner{

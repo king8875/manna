@@ -40,15 +40,6 @@ main{
 
 }
 
-.arrow-ic--block{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-}
 
 
 .article_body{

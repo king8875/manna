@@ -1,12 +1,43 @@
 
-const swiper = new Swiper('.visual-swiper--section .swiper', {
+// 1. 먼저 Swiper 인스턴스를 생성
+const Visualswiper = new Swiper('.visual-swiper--section .swiper', {
   loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    clickable: true,
+    el: '.swiper-pagination',
+  },
   navigation: {
     nextEl: '.visual-swiper--section .swiper-button-next',
     prevEl: '.visual-swiper--section .swiper-button-prev',
   },
-
 });
+
+
+const toggleBtn = document.querySelector('.playControl-wrapper');
+let isPlaying = true;
+
+// 초기 상태 클래스 추가 (첫 클릭 동작 문제 해결)
+toggleBtn.classList.add('playing'); // ← 자동재생 시작 상태 반영
+
+toggleBtn.addEventListener('click', function () {
+  if (isPlaying) {
+    Visualswiper.autoplay.stop(); // 자동재생 멈춤
+    toggleBtn.classList.remove('playing'); // 버튼 클래스 제거
+  } else {
+    Visualswiper.autoplay.start(); // 자동재생 시작
+    toggleBtn.classList.add('playing'); // 버튼 클래스 추가
+  }
+  isPlaying = !isPlaying; // 상태 반전
+});
+
+
+
+
+
 const campswiper = new Swiper('.camp_swiper_mobile.swiper', {
   navigation: {
     nextEl: '.camp_swiper_mobile .swiper-button-next',

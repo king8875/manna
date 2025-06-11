@@ -10,11 +10,11 @@
     <script src="assets/js/common.js" defer></script>
     <script src="assets/js/index.js" defer></script>
     <!-- swiper link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- font aw -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- swiper script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- gsap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
@@ -326,10 +326,10 @@
         <div class="wrapper">
             <section class="visual-swiper--section">
                 <div class="visual-swiper--block">
-                    <div class="swiper">
+                    <div class="swiper" id="visualSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="/assets/img/camp/campswiper_img.jpg" alt="">
+                                <div class="img--block"><img src="/assets/img/camp/campswiper_img01.png" alt=""></div>
                                 <div class="visual-tx--block">
                                     <div class="visual-tx--subtit">
                                         <p>성령행전</p>
@@ -351,9 +351,9 @@
                                         <strong>성령행전 시리즈 연속 듣기</strong>
                                     </div>
                                 </div>
-                            </div>
+                            </div> 
                             <div class="swiper-slide">
-                                <img src="/assets/img/camp/campswiper_img.jpg" alt="">
+                                <div class="img--block"><img src="/assets/img/camp/campswiper_img01.png" alt=""></div>
                                 <div class="visual-tx--block">
                                     <div class="visual-tx--subtit">
                                         <p>성령행전</p>
@@ -375,6 +375,26 @@
                                         <strong>성령행전 시리즈 연속 듣기</strong>
                                     </div>
                                 </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="img--block"><img src="/assets/img/camp/campswiper_img01.png" alt=""></div>
+                                <div class="visual-tx--block">
+                                    <div class="visual-tx--subtit">
+                                        <p>성령행전</p>
+                                        <p>빛을 따라 생명으로</p>
+                                    </div>
+                                    <div class="visual-tx--tit">
+                                        <strong>성령행전 시리즈 연속 듣기</strong>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                        <div class="swiper_control--block">
+                            <div class="visual-pagination swiper-pagination"></div>
+                            <div class="playControl-wrapper">
+                                <span class="autoplay-btn pause_ic"><i class="fa-solid fa-pause"></i></span>
+                                <span class="autoplay-btn play_ic"><i class="fa-solid fa-play"></i></span>
                             </div>
                         </div>
                         <div class="btn prev swiper-button-prev">
@@ -557,6 +577,10 @@
                         <div class="more--block">
                             <a href="#">
                                 <span>자세히보기</span>
+                                <div class="arrow-ic--block">
+                                    <i class="fa-solid fa-arrow-right first-arrow"></i>
+                                    <i class="fa-solid fa-arrow-right second-arrow"></i>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -683,6 +707,10 @@
                         <div class="more--block">
                             <a href="#">
                                 <span>자세히보기</span>
+                                <div class="arrow-ic--block">
+                                    <i class="fa-solid fa-arrow-right first-arrow"></i>
+                                    <i class="fa-solid fa-arrow-right second-arrow"></i>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -835,6 +863,10 @@
                             <div class="more--block">
                                 <a href="#">
                                     <span>자세히보기</span>
+                                    <div class="arrow-ic--block">
+                                        <i class="fa-solid fa-arrow-right first-arrow"></i>
+                                        <i class="fa-solid fa-arrow-right second-arrow"></i>
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -986,6 +1018,12 @@
                             <div class="online--block swiper-slide">
                                 <div class="ask_tx--block">
                                     <p class="ask_tit">온라인 헌금</p>
+                                    <!-- <div class="more--block">
+                                        <div class="arrow-ic--block">
+                                            <i class="fa-solid fa-arrow-right first-arrow"></i>
+                                            <i class="fa-solid fa-arrow-right second-arrow"></i>
+                                        </div>
+                                    </div> -->
                                     <p class="ask_subtit">
                                         헌금 봉헌도 편리하게,<br />
                                         온라인 헌금을 안내드립니다.
