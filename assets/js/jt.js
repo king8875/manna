@@ -114,6 +114,58 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// train js 
+// const selectBtn = document.querySelectorAll('.train_select--block .select--btn');
+
+// selectBtn.forEach(btn => {
+//     btn.addEventListener('click', function () {
+//         const selectBox = btn.querySelector('.select_hidden--block');
+//         if (selectBox) {
+//             selectBox.classList.toggle('visible');
+//         }
+//     });
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const selectBtns = document.querySelectorAll('.train_select--block .select--btn');
+
+    selectBtns.forEach(btn => {
+        const hiddenBlock = btn.querySelector('.select_hidden--block');
+
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation(); // 버튼 클릭 시 이벤트 버블링 막기
+            hiddenBlock.classList.toggle('visible');
+        });
+    });
+
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.select_hidden--block.visible').forEach(block => {
+            block.classList.remove('visible');
+        });
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.train_body--item');
+
+    items.forEach(item => {
+        const separator = document.createElement('section');
+        separator.className = 'train main_section_separator';
+
+        // item 바로 뒤에 삽입
+        item.parentNode.insertBefore(separator, item.nextSibling);
+    });
+});
+
+
+
+
+
+
+
+
 
 
 
@@ -164,8 +216,6 @@ mm.add("(max-width:1020px)", function () {
 
 });
 
-
-
 // pc
 mm.add("(min-width:1021px)", function () {
 
@@ -210,3 +260,7 @@ mm.add("(min-width:1021px)", function () {
     });
 
 });
+
+
+
+

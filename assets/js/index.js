@@ -35,7 +35,7 @@ const mediaSwiper = new Swiper('.media_content--down .swiper', {
   },
   breakpoints: {
     0: { slidesPerView: "auto" },      // 모바일 ~ 999px
-    1000: { slidesPerView: 4 }    // 1000px 이상
+    1020: { slidesPerView: 4 }    // 1000px 이상
   }
 });
 

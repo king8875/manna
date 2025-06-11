@@ -11,7 +11,7 @@
     <!-- font aw -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- js -->
-    <script src="assets/js/train.js" defer></script>
+    <script src="assets/js/jt.js" defer></script>
     <script src="assets/js/common.js" defer></script>
     <!-- swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -181,14 +181,14 @@
 
         <div class="header_inner pc">
             <div class="logo--block">
-                <a href="#">
+                <a href="/index.html">
                     <img src="/assets/img/header/logo.svg" alt="메인로고이미지">
                 </a>
             </div>
             <div class="nav--block">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#" class="nav_item--link">예배</a>
+                        <a href="/test.html" class="nav_item--link">예배</a>
                         <ul class="sub_list">
                             <li class="sub_item">
                                 <a href="#">설교</a>
@@ -208,7 +208,7 @@
                         <a href="#" class="nav_item--link">소모임</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_item--link">훈련</a>
+                        <a href="/train.html" class="nav_item--link">훈련</a>
                         <ul class="sub_list">
                             <li class="sub_item">
                                 <a href="#">설교</a>
@@ -308,8 +308,6 @@
 
     <main>
         <div class="wrapper">
-
-
             <div class="article_header--block">
                 <div class="inner">
                     <ul class="jt-breadcrumb">
@@ -341,6 +339,7 @@
             </div>
 
 
+            <section class="train main_section_separator"></section>
 
             <section class="train_section">
                 <div class="inner">
@@ -348,29 +347,80 @@
                         <div class="train_header--block">
                             <h2 class="train_header--tit">최신프로그램</h2>
                             <ul class="train_tab--list">
-                                <li class="train_tab--item">전체</li>
-                                <li class="train_tab--item">리더십</li>
+                                <li class="train_tab--item active btn">전체</li>
+                                <li class="train_tab--item btn">리더십</li>
                             </ul>
+                            <section class="train main_section_separator"></section>
+
                             <div class="train_select--block">
-                                <div class="select--btn">
+
+                                <div class="btn select--btn">
                                     <span>전체 부서</span>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <div class="select_hidden--block">
+                                        <ul>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="select--btn">
+                                <div class="btn select--btn">
                                     <span>전체 사역</span>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <div class="select_hidden--block">
+                                        <ul>
+                                            <li class="selected">전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                            <li>전체 부서</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="reload_ic"><i class="fa-solid fa-rotate-right"></i></div>
+                                <div class="btn reload_ic">
+                                    <span class="blind">새로고침</span>
+                                    <i class="fa-solid fa-rotate-right"></i>
+                                </div>
                             </div>
+                            <section class="train main_section_separator"></section>
+
                         </div>
-
-
                         <div class="train_body--block">
                             <div class="train_body--header">
                                 <p><span>91</span>개 프로그램</p>
                                 <div class="train_body--util">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                    <i class="fa-solid fa-bars"></i>
-                                    <div class="sort--btn">
+                                    <i class="btn fa-solid fa-magnifying-glass search_ic">
+                                        <span class="blind">돋보기 아이콘</span>
+                                    </i>
+                                    <i class="btn fa-solid fa-bars bar_ic">
+                                        <span class="blind">매뉴 아이콘</span>
+                                    </i>
+                                    <div class="btn sort--btn">
                                         <span>등록순</span>
+                                        <i class="fa-solid fa-caret-down"></i>
                                     </div>
                                 </div>
                             </div>
@@ -379,7 +429,29 @@
                             <ul class="train_body--list">
                                 <li class="train_body--item">
 
+                                    <div class="train_item--left">
+                                        <div class="tr_data--group">
+                                            <span class="tr_cat">리더십</span>
+                                            <span class="tr_time" lang="en">2025.05.23 - 2025.03.09</span>
+                                        </div>
+                                        <a href="#" class="tr_tit">미디어동산 성찬투어</a>
+                                        <div class="tr_deadline">
+                                            신청
+                                            <span>06월 21일까지</span>
+                                        </div>
+                                        <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
 
+                                    <div class="train_item--right">
+                                        <div class="btn tr_detail--btn">
+                                            <span>자세히보기</span>
+                                        </div>
+                                        <div class="btn tr_submit--btn">
+                                            <span>신청하기</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="train_body--item">
 
                                     <div class="train_item--left">
                                         <div class="tr_data--group">
@@ -388,30 +460,256 @@
                                         </div>
                                         <a href="#" class="tr_tit">미디어동산 성찬투어</a>
                                         <div class="tr_deadline">
-                                            <span>신청</span>
+                                            신청
                                             <span>06월 21일까지</span>
                                         </div>
                                         <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
                                     </div>
 
-
-
-
                                     <div class="train_item--right">
-                                        <div class="tr_detail--btn">
+                                        <div class="btn tr_detail--btn">
                                             <span>자세히보기</span>
                                         </div>
-                                        <div class="tr_submit--btn">
+                                        <div class="btn tr_submit--btn">
+                                            <span>신청하기</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="train_body--item">
+
+                                    <div class="train_item--left">
+                                        <div class="tr_data--group">
+                                            <span class="tr_cat">리더십</span>
+                                            <span class="tr_time" lang="en">2025.05.23 - 2025.03.09</span>
+                                        </div>
+                                        <a href="#" class="tr_tit">미디어동산 성찬투어</a>
+                                        <div class="tr_deadline">
+                                            신청
+                                            <span>06월 21일까지</span>
+                                        </div>
+                                        <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+
+                                    <div class="train_item--right">
+                                        <div class="btn tr_detail--btn">
+                                            <span>자세히보기</span>
+                                        </div>
+                                        <div class="btn tr_submit--btn">
+                                            <span>신청하기</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="train_body--item">
+
+                                    <div class="train_item--left">
+                                        <div class="tr_data--group">
+                                            <span class="tr_cat">리더십</span>
+                                            <span class="tr_time" lang="en">2025.05.23 - 2025.03.09</span>
+                                        </div>
+                                        <a href="#" class="tr_tit">미디어동산 성찬투어</a>
+                                        <div class="tr_deadline">
+                                            신청
+                                            <span>06월 21일까지</span>
+                                        </div>
+                                        <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+
+                                    <div class="train_item--right">
+                                        <div class="btn tr_detail--btn">
+                                            <span>자세히보기</span>
+                                        </div>
+                                        <div class="btn tr_submit--btn">
+                                            <span>신청하기</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="train_body--item">
+
+                                    <div class="train_item--left">
+                                        <div class="tr_data--group">
+                                            <span class="tr_cat">리더십</span>
+                                            <span class="tr_time" lang="en">2025.05.23 - 2025.03.09</span>
+                                        </div>
+                                        <a href="#" class="tr_tit">미디어동산 성찬투어</a>
+                                        <div class="tr_deadline">
+                                            신청
+                                            <span>06월 21일까지</span>
+                                        </div>
+                                        <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+
+                                    <div class="train_item--right">
+                                        <div class="btn tr_detail--btn">
+                                            <span>자세히보기</span>
+                                        </div>
+                                        <div class="btn tr_submit--btn">
+                                            <span>신청하기</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="train_body--item">
+
+                                    <div class="train_item--left">
+                                        <div class="tr_data--group">
+                                            <span class="tr_cat">리더십</span>
+                                            <span class="tr_time" lang="en">2025.05.23 - 2025.03.09</span>
+                                        </div>
+                                        <a href="#" class="tr_tit">미디어동산 성찬투어</a>
+                                        <div class="tr_deadline">
+                                            신청
+                                            <span>06월 21일까지</span>
+                                        </div>
+                                        <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+
+                                    <div class="train_item--right">
+                                        <div class="btn tr_detail--btn">
+                                            <span>자세히보기</span>
+                                        </div>
+                                        <div class="btn tr_submit--btn">
+                                            <span>신청하기</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="train_body--item">
+
+                                    <div class="train_item--left">
+                                        <div class="tr_data--group">
+                                            <span class="tr_cat">리더십</span>
+                                            <span class="tr_time" lang="en">2025.05.23 - 2025.03.09</span>
+                                        </div>
+                                        <a href="#" class="tr_tit">미디어동산 성찬투어</a>
+                                        <div class="tr_deadline">
+                                            신청
+                                            <span>06월 21일까지</span>
+                                        </div>
+                                        <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+
+                                    <div class="train_item--right">
+                                        <div class="btn tr_detail--btn">
+                                            <span>자세히보기</span>
+                                        </div>
+                                        <div class="btn tr_submit--btn">
+                                            <span>신청하기</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="train_body--item">
+
+                                    <div class="train_item--left">
+                                        <div class="tr_data--group">
+                                            <span class="tr_cat">리더십</span>
+                                            <span class="tr_time" lang="en">2025.05.23 - 2025.03.09</span>
+                                        </div>
+                                        <a href="#" class="tr_tit">미디어동산 성찬투어</a>
+                                        <div class="tr_deadline">
+                                            신청
+                                            <span>06월 21일까지</span>
+                                        </div>
+                                        <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+
+                                    <div class="train_item--right">
+                                        <div class="btn tr_detail--btn">
+                                            <span>자세히보기</span>
+                                        </div>
+                                        <div class="btn tr_submit--btn">
+                                            <span>신청하기</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="train_body--item">
+
+                                    <div class="train_item--left">
+                                        <div class="tr_data--group">
+                                            <span class="tr_cat">리더십</span>
+                                            <span class="tr_time" lang="en">2025.05.23 - 2025.03.09</span>
+                                        </div>
+                                        <a href="#" class="tr_tit">미디어동산 성찬투어</a>
+                                        <div class="tr_deadline">
+                                            신청
+                                            <span>06월 21일까지</span>
+                                        </div>
+                                        <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+
+                                    <div class="train_item--right">
+                                        <div class="btn tr_detail--btn">
+                                            <span>자세히보기</span>
+                                        </div>
+                                        <div class="btn tr_submit--btn">
+                                            <span>신청하기</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="train_body--item">
+
+                                    <div class="train_item--left">
+                                        <div class="tr_data--group">
+                                            <span class="tr_cat">리더십</span>
+                                            <span class="tr_time" lang="en">2025.05.23 - 2025.03.09</span>
+                                        </div>
+                                        <a href="#" class="tr_tit">미디어동산 성찬투어</a>
+                                        <div class="tr_deadline">
+                                            신청
+                                            <span>06월 21일까지</span>
+                                        </div>
+                                        <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+
+                                    <div class="train_item--right">
+                                        <div class="btn tr_detail--btn">
+                                            <span>자세히보기</span>
+                                        </div>
+                                        <div class="btn tr_submit--btn">
+                                            <span>신청하기</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="train_body--item">
+
+                                    <div class="train_item--left">
+                                        <div class="tr_data--group">
+                                            <span class="tr_cat">리더십</span>
+                                            <span class="tr_time" lang="en">2025.05.23 - 2025.03.09</span>
+                                        </div>
+                                        <a href="#" class="tr_tit">미디어동산 성찬투어</a>
+                                        <div class="tr_deadline">
+                                            신청
+                                            <span>06월 21일까지</span>
+                                        </div>
+                                        <p class="tr_subtit">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+
+                                    <div class="train_item--right">
+                                        <div class="btn tr_detail--btn">
+                                            <span>자세히보기</span>
+                                        </div>
+                                        <div class="btn tr_submit--btn">
                                             <span>신청하기</span>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-
-
                         </div>
-
-                        
+                        <div class="train_pagination--block">
+                            <ul>
+                                <li class="active">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                            <ul class="page_next">
+                                <div class="btn onepage_next--btn">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <div class="btn tenpage_next--btn">
+                                    <i class="fa-solid fa-forward"></i>
+                                </div>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -419,7 +717,39 @@
 
 
 
-
+            <section class="ask_section">
+                <div class="inner">
+                    <div class="swiper">
+                        <div class="ask_content swiper-wrapper">
+                            <div class="online--block swiper-slide">
+                                <div class="ask_tx--block">
+                                    <p class="ask_tit">온라인 헌금</p>
+                                    <p class="ask_subtit">
+                                        헌금 봉헌도 편리하게,<br />
+                                        온라인 헌금을 안내드립니다.
+                                    </p>
+                                </div>
+                                <div class="ask_icon--block">
+                                    <img src="/assets/img/ask/ask_img01.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="online--block swiper-slide">
+                                <div class="ask_tx--block">
+                                    <p class="ask_tit">문의하기</p>
+                                    <p class="ask_subtit">
+                                        궁금하신 문의사항을 남겨주세요<br />
+                                        정성을 다해 답해 드리겠습니다.
+                                    </p>
+                                </div>
+                                <div class="ask_icon--block">
+                                    <img src="/assets/img/ask/ask_img.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ask-swiper-pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
 
 
 

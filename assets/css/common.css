@@ -25,7 +25,9 @@ section{
 }
 .mobile{ display: none; }
 
-
+.btn{
+    cursor: grab;
+}
 
 
 .jt-sub-title--block,
@@ -69,6 +71,17 @@ section{
         padding: 0;
     }
 }
+
+@media (max-width:1020px) {
+    .article_header--block .inner{
+        padding: 0px;
+    }
+    .train_section .inner {
+        padding: 0;
+    }
+}
+
+
 
 
 
